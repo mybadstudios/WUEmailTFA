@@ -1,5 +1,4 @@
-﻿using UnityEngine;
-using System;
+﻿using System;
 
 namespace MBS
 {
@@ -9,11 +8,9 @@ namespace MBS
         const string filepath = "wub_emailtfa/unity_functions.php";
         const string ASSET = "EMAILTFA";
 
-        static public void GenerateTFAEntry(string gamename, Action<CML> OnSuccess = null, Action<CMLData> OnFail = null)
+        static public void GenerateTFAEntry(Action<CML> OnSuccess = null, Action<CMLData> OnFail = null)
         {
-            CMLData data = new ();
-            data.Set("gamename", gamename);
-            WPServer.ContactServer(WUETFAActions.GenerateTFAEntry, filepath, ASSET, data, OnSuccess, OnFail);
+            WPServer.ContactServer(WUETFAActions.GenerateTFAEntry, filepath, ASSET, null, OnSuccess, OnFail);
         }
         static public void ValidateKey(string key, Action<CML> OnSuccess = null, Action<CMLData> OnFail = null)
         {

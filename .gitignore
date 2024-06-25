@@ -74,3 +74,9 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+/Assets/myBad Studios/Core
+/Assets/myBad Studios/Editor
+/Assets/myBad Studios/WordPress Bridge
+Assets/myBad Studios/WordPress Bridge.meta
+Assets/myBad Studios/Editor.meta
+Assets/myBad Studios/Core.meta
