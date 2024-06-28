@@ -1,5 +1,11 @@
 ### WUEmailTFA
-A simple extension to add TFA to your project. Not perfect but definitely simple to implement
+A simple extension to add Two Factor Authentication to your Unity project if you are using the [WordPress For Unity Bridge](https://mybadstudios.com/product/wordpress-bridge/).
+
+Not perfect but definitely *incredibly* simple to implement. The goal here is to generate a random key after a player logs in to your game then email that code to the player. In your game you simply show them a scene where they can enter the code and only continue to the main game if / when they have entered a valid code. 
+Additionally, codes remain valid for a limited time only (currently set to 10 minutes)
+
+This project includes the WordPress plugin to do the heavy lifting as well as a demo Unity project showing how to implement it. 
+Again, _*it is super simple!*_
 
 If You enjoy my work, please consider buying me a coffee...
 
