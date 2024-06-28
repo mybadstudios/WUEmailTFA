@@ -1,6 +1,11 @@
 ### WUEmailTFA
 A simple extension to add TFA to your project. Not perfect but definitely simple to implement
 
+If You enjoy my work, please consider buying me a coffee...
+
+[<img src="bmcbutton.png">](https://www.buymeacoffee.com/mybad)
+
+
 ### High level overview: How this works
 When the WordPress for Unity Bridge logs in, we send a message to the website saying "Create a random code". The person who just logged in then receives this code via their registered email address.
 Back in Unity we simply go to a scene where we prompt the user to enter the code and we then say "Validate the code". The function takes 2 actions as parameters: one to execute on failure and one to execute if the code is correct.
